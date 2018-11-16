@@ -78,10 +78,9 @@
 \title{Chap.12 Matching Markets}
 \subtitle{Presentation}
 
-\author{Jiao Luo}
+\author{Jigao Luo}
 \institute[]{TUM}
 
-% \setbeamertemplate{navigation symbols}{}
 \begin{document}
 \begin{frame}
 \titlepage
@@ -91,9 +90,11 @@
 \begin{frame} 
 		\tableofcontents[currentsection]
 \end{frame}
-% Hi every one 
-% I will briefly introduce this topic matching
-% I hope you can get somekind of inspiration and interest from it 
+% Hi every one.
+% My nane is Jigao.
+% Welcome to my presentation.
+% My topic is the Matching Marktes.
+% I hope you can enjoy that and get kind of inspiration, interest from that. 
 % Let's start!
 
 \begin{frame}
@@ -108,28 +109,31 @@
 		\pause
 		\vspace{1cm}
 		\item AHA! This Seminar!
-		\item For me $Matching Markets \succ Auction Design \succ Networks$ (preference list)
+		\pause
+		\item For me $Matching \;Markets \succ Auction \;Design \succ Networks$ (preference list)
 	\end{itemize}
 \end{frame}
-% I would't star with the quesion like "Let definite the matching" 
-% And i donot want to act like a prof
-% I would start with this question "Have you expercise the matching?"
-% I would say yes.  And also say that for you all
-% Why am I so sure?
-% I would want to call you memory, the thing that you haved expricence, but not noticed that
-% I am 100% sure about that all you have experience the matching, because of this seminar!
-% Do you remember how we pick up our topics?
-% So we slecte 3 topic from all chapieal. The 3 that we love most
-% even give a refenrence on it, then call the reference list of every student are collect
-% maybe a mechinism or a algorithe starts to match every one to a chap
-% TO MAKE EVERY ONE HAPPY! Our aim, our goal
 
-% for me Matching better als Game als Auction
+% The first part of my presentation is the Introduction.
+
+% I would ask you immediately a question, before we go to the real topic. 
+% "Have you expercise the matching?"
+% I would say Yes. And I would answer with yes for you all.
+% Why am I so sure? Why can I be 100% sure that we all experienced match?
+% !!!I would want to call your memory, the things that you haved expricenced, but not noticed.
+% I am 100% sure about that all you have experience the matching, because of this seminar!
+% That would be a AHA moment. 
+% Do you remember how we pick up our topics?
+% So we slecte 3 chap from the book.
+% And even give refenrences on them, 
+% For me I prefer MM most, and I would be very gald if I get that.
+% Then call the reference list of every student are collect
+% a mechinism or a algorithe starts to work on the preference lists
+% Then come to a result that we now have. Everyone is matched with a final chap.
+% Maybe everyone is also happy about the his or her match. 
 
 % I even can write my name on this math symbol
 % it means that for mean mm better than ad as network
-
-% Maybe have a eye on the matching that you may even ever notice!  我的主旨！
 
 \begin{frame}
 	\frametitle{Another Example - Matching}
@@ -142,13 +146,15 @@
 		\item Spoiler: It a tool from our DSS-Chair.
 	\end{itemize}
 \end{frame}
-% Maybe I said too little. We have expriencied the matching for plenty times!
-% From the collegt at tum start until finish, we always have to matching tool to get a place in lecture, exercise group.
-% This matching does the simliar things, match to student to a place in the lecture exercise group.
+% We have expriencied the matching for plenty times!
+% For me is this thing kind of a "Welcome to new semester".
+% Because we always have to use this matching tool at the begin of semester to get a place in lecture, exercise group.
+% This matching does the simliar things, collect the preference list, and using an algorithm to get the finally matching.
 % To make every one happpy!
 % So a Spoiler, that is a tool develped by our chair. So you can see how important the matching is
 % Pay attention to the things that maybe small but have great impact on us!
 % TODO TO MAKE EVERY HAPPY -- Stable machting
+% Maybe have a eye on the matching that you may even ever notice!  我的主旨！
 
 
 \section{Basic} % TODO 思考各种段落名字！！！
@@ -160,29 +166,23 @@
 	% label right alignment 右边对齐 [leftmargin=!,labelwidth=\widthof{\bfseries strict preference order}]
 	\begin{description}[leftmargin=!,labelwidth=\widthof{\bfseries strict preference order}]
 		\item [\emph{Agent}]$x \in X$, the set of all agnets
-		\item [\emph{Matching}] $m \in M$, a set of machings
+		\item [\emph{Matching}] $m \in M$, the set of all matchings
 		\item [\emph{Strict Preference Order}] $m \succ_x m'$, agent $x$ strict prefers $m$ to $m'$
 	\end{description}
-	\pause
 	\begin{center}
-		$Matching Markets \succ_{Jigao} Auction Design$
+		Example before: $Matching \;Markets \succ_{Jigao} Auction \;Design$
 	\end{center}
 \end{frame}
 % There are two basic sets and the element of these sets
-% The participants is called agent
-% X is the set of the agents
-% and the matching is the result that we want, like the final chap of our seminar, or the exercise group that we want to match
-% and we have many possible matchings or results
-% Like the example before for me is the chapitel matching makrts important than auction desing
-% So in this context, I strict prefer the MM to ADesign 
-% For agent jigao he prefers MM to AD
+% The participant is called agent.
+% Upper case X is the set of the agents.
+% The matching is the result, like the final chap of our seminar, or the exercise group that we are matched.
 
-
-
-% \begin{exmp}
-% The man $x$ admiring the woman $y$ most in woman's set $Y$ can be formulated as: $\forall y' \in Y\setminus{y} : y \succ_x y'$ \\
-% % If the woman $y$ equally admires the man $x_1$ and the other man $x_2$. We can formulate that as: $x_1 \sim_y x_2$
-% \end{exmp}
+% Strict preference order can describe how we prefer the matching.
+% I would like to use the example before to make it clear.
+% I strictly perfer MM to AD
+% So in this context, I strict prefer the MM to ADesign
+% For agent jigao he strictly prefers MM to AD.
 
 \begin{frame}{Three Types of Matching Problems}
 	\begin{columns}[t]
@@ -217,20 +217,22 @@
 %     \footnote{David C. Parkes, Sven Seuken. Economics and Computation. Chapter 12: Matching Markets(pp. 291-293). 2017}
 
 
-% Then I introduce the 3 Type of the maching Problems.
-% The first one is the Two-Sided Matching. where there are two distinct groups of agents, and the problem is to match each agent on one side of the market with  an agent on the other side. 
-% Like this graph here. I mean this two distinct group has the preference to each other. In word they can able to choose they matching, will have happy or sad feeling.
+% Here I introduce 3 Type of the maching Problems.
+% The first one is the Two-Sided Matching. where there are two distinct groups of agents, and the problem is to match each agent on one side with an agent on the other side. 
+% Like this graph here. I mean this two distinct group has the preference to each other. In word they can able to choose their matching, have preference on the agent at the oppersite side.
 % Stable Marriage Problem belongs to this type. That we will disscuss later
 
-% Second tyoe is Assignment Problems the matching, where there are items or resource and agents with preferences on resource, and  the problem is to assign a distinct resource to each agent.
-% I would say the matching system and the this seminar is a good example here.
+% Second type is Assignment Problems the matching, where there are items or resource and agents with preferences on resource, and the problem is to assign a distinct resource to each agent.
+% TODO what is a assignment problem???????
+% TODO Ubung gruppe a assignment????????
+% ??????????I would say the matching the this seminar is a good example here.
 % To make a different distinglish them
-% The chapitel in book or the exercise group are just item or recours
-% They do not have preference. They just have to assigned to us. 
+% The chapitel in book are just item or recources.
+% They do not have preference. They just have to be assigned to us. 
 % Do you get the point? How to tell difference between the these two.
 
 % The last type is Kidney-Paired Donation where patient-donor pairs arrive to the market, and the problem is to determine how to match pairs such that the donor in one pair is compatible with
-%     the patient in another pair and vice versa, so that such a match enables two kidney transplants.
+%  the patient in another pair, so that such a match enables two kidney transplants.
 % There many factor that we have to consider about, blood type, when and where to do this operation(live transpant)
 % And this is a big picture. We also have to befinit the most patient, to keep them health.
 
@@ -241,16 +243,25 @@
 		\item [\emph{Unweighted Graphs in Matching}]
 	\end{description}
 				\begin{itemize}
-					\item  a vertex $v$ is matched in $M$: $M(v) \in V \setminus{v} : \{v, M(v)\} \in M$. 
-					\item  Otherwise, $v$ is unmatched in $M$: $\{v, \emptyset\}$
+					\item Vertex: Agent, Edge: Matching
+					\item  A vertex $v$ is matched in $M$: $M(v) \in V \setminus{v} : (v, M(v))\in M$. 
+					\item  Otherwise, $v$ is unmatched in $M$: $(v, \emptyset)$
 				\end{itemize}
 	\begin{description}[leftmargin=!,labelwidth=\widthof{\bfseries strict preference order}]
 		\item [\emph{Bipartite Graph}] 
 	\end{description}
 	\begin{itemize}
-		\item for every edge $(u,v)$:  $u$ $v$ in opposite subsets.
+		\item For every edge $(u,v)$:  $u, \;v$ in opposite subsets.
 	\end{itemize}
 \end{frame}
+% Matching should also be described with a graph.
+% As we talked about M is the set of all the mathing
+% So v and M(v) is a matching form the set
+% M(v) is the agent, who is matched with v.
+
+% Bipartite Graph
+% u, v should come from oppersite subset
+% For example, one from left, the other from right.
 
 % TODO 
 % {v, M(v)} or {u, v} are edges
@@ -259,7 +270,7 @@
 {
 \setbeamercolor{background canvas}{bg=yellow!20}
 \begin{frame}{Matching in Graph - Quiz1}
-	Following are two graphs representing the matching between 2 sides. Which is a bipartite graph?
+	Following are two graphs. Which is a bipartite graph?
 \begin{center}
     \begin{minipage}{.4\textwidth}
         \begin{tikzpicture}
@@ -324,7 +335,7 @@
 % Bacause the x1 x2 are connnected
 % We have somehow a sequence of the node
 
-\section{Stable Marriage Problem}
+\section{Marriage Problem}
 \begin{frame} 
 	\tableofcontents[currentsection]
 \end{frame}
@@ -405,8 +416,8 @@
 
 \begin{frame}{Prefer to be Unmatched}
 	\begin{itemize}
-		\item $\emptyset \succ_{y_{red}} x$ 
-		\item $x$ is \emph{unacceptable} for $y_{red}$
+		\item $\emptyset \succ_{y_{blue}} M(y)$ 
+		\item $M(y)$ is \emph{unacceptable} for $y_{blue}$
 	\end{itemize}
 \end{frame}
 % An agent may prefer to be unmatched than matched with a particular agent on the other side.
@@ -437,7 +448,7 @@
 \begin{center}
 	\begin{itemize}[leftmargin=1em+8mm]
     \item Man $x$ and woman $y$ form a blocking pair $(x, y)$ for matching $M$ if $M(x) \neq y$ and $M(x) \neq y$.\pause \\ \textcolor{red}{No} It should be corrected with $y \succ_x M(x)$ and $x \succ_y M(y)$
-    \item A stable matching is one in which no pair of agents prefer each other over their respective matches. \pause \hspace{1cm} \textcolor{red}{Yes}
+    \item A stable marriage is one in which no pair of agents prefer each other over their matches. \pause \hspace{1cm} \textcolor{red}{Yes}
     % \item If $\emptyset \succ_y M(y)$ for a woman $y$, then $(y, \emptyset)$ form a blocking pair. \pause  \textcolor{red}{Yes}
 \end{itemize}
 \end{center}
@@ -454,17 +465,18 @@
 		% \caption{TUM Matching platform\footnote{\url{https://matching.in.tum.de/}}}
 	\end{figure}
 	\pause
-	I would say \textcolor{red}{yes}. We do have $y_{red} \succ_{x} M(x)$. \\
-	\vfill
-	\begin{description}[leftmargin=!,labelwidth=\widthof{\bfseries Blocking Pair}]
-		\item [\emph{Blocking Pair}] if $(x, y) \notin M$ but:
-	\end{description}
-	\begin{itemize}[leftmargin=1em+2.5cm]
-			\item \st{$y$ prefers $x$ to $M(y)$} and
-			\item $x$ prefers $y$ to $M(x)$
-			\item If $\emptyset \succ_y M(y)$ for a woman $y$, then $(y, \emptyset)$ form a blocking pair.
-	\end{itemize}
-	But I assume the $y_{blue}$ is $M(x)$ and at this moment she prefers not to be matched with $x$. Then a blocking pair $(y, \emptyset)$
+	I would say \textcolor{red}{yes}. 
+	% We do have $y_{red} \succ_{x} M(x)$. \\
+% 	\vfill
+% 	\begin{description}[leftmargin=!,labelwidth=\widthof{\bfseries Blocking Pair}]
+% 		\item [\emph{Blocking Pair}] if $(x, y) \notin M$ but:
+% 	\end{description}
+% 	\begin{itemize}[leftmargin=1em+2.5cm]
+% 			\item \st{$y$ prefers $x$ to $M(y)$} and
+% 			\item $x$ prefers $y$ to $M(x)$
+% 			\item If $\emptyset \succ_y M(y)$ for a woman $y$, then $(y, \emptyset)$ form a blocking pair.
+% 	\end{itemize}
+	I assume the $y_{blue}$ is $M(x)$ and at this moment she prefers not to be matched with $x$. Then a blocking pair $(y, \emptyset)$
 \end{center}
 \end{frame}
 }
@@ -653,7 +665,7 @@
 	\begin{description}[leftmargin=!,labelwidth=\widthof{\bfseries Observation 1}]
 		\item [Observation 1] Man proposes to woman in decreasing order of preference.
 		\item [Observation 2] Once a woman is matched, she never becomes unmatched. 
-		\item [Observation 3] No agent proposes to another agent more than once,
+		\item [Observation 3] No man proposes to another woman more than once,
 	\end{description}
 	\begin{theorem}
     The algorithm terminates in at most $N ^2$ iterations
@@ -739,11 +751,13 @@
 		\begin{itemize}
 			\item Assume there exists a blocking pair $(x, y)$. So $x \succ_y M(y)$ and $y \succ_x M(x)$
 			\item $x$ must have proposed to $y$ and $y$ rejected $x$.
-			\item $y$ only reject $x$, when $M(y) \succ_y x$
+			\item $y$ only rejects $x$, when $M(y) \succ_y x$
 			\item Proved using a contradiction.
 		\end{itemize}
 	\end{proof}
 	\end{frame}
+% TODO 重写	
+	
 % We have seen that this contradiction is a powerful tool for proving
 % So we also recap that and try to continue to apply that is this case
 
@@ -772,13 +786,6 @@
 % Herr kopplerungman
 % TODO Martin
 
-
-
-
-\begin{frame} 
-	\tableofcontents[currentsection]
-\end{frame}
-
 \section{Context}
 \begin{frame} 
 	\tableofcontents[currentsection]
@@ -806,7 +813,7 @@
 		\item National Resident Matching Program (NRMP)\footnote{\url{https://en.wikipedia.org/wiki/National_Resident_Matching_Program}}.
 		\item Original use just after WWII.
 		\item Match med-school students to hospitals.
-		\item Men $\thickapprox$ hospitals, Women $\thickapprox$ med school residents. But not same!
+% 		\item Men $\thickapprox$ hospitals, Women $\thickapprox$ med school residents. But not same!
 		\item Also called \textbf{The MATCH}.
 	\end{itemize}
 \end{frame}
